@@ -185,7 +185,7 @@ impl Searcher {
             },
             OutputFormat::List => {
                 output_value.push_str(&record);
-                output_value.push('\0');
+                output_value.push(' ');
             },
             OutputFormat::Json => {
                 // use file_map later
